@@ -289,6 +289,51 @@ a {
     z-index: 10;
 }
 
+.featured-document {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 34px 40px;
+    margin: 8px 0 20px;
+    border: 4px solid var(--tertiary);
+    border-radius: 28px;
+    background: var(--secondary);
+    color: var(--primary);
+    box-shadow: 8px 8px 0 var(--tertiary);
+}
+
+.featured-document-label {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.featured-document h2 {
+    font-family: var(--font-sans);
+    font-size: clamp(1.7rem, 3vw, 3rem);
+    line-height: 1.05;
+    max-width: 760px;
+}
+
+.featured-document p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.featured-document .retro-btn {
+    flex: 0 0 auto;
+    padding: 16px 26px;
+    font-size: 1.05rem;
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
 .bento-card {
     border-radius: 40px;
     padding: 32px;
@@ -423,6 +468,7 @@ a {
     .bento-cards-row { grid-template-columns: 1fr; }
     .bento-card { height: 250px; }
     .abstract-shape { opacity: 0.5; }
+    .featured-document { align-items: flex-start; flex-direction: column; }
 }
 
 @media (max-width: 768px) {
@@ -2108,9 +2154,18 @@ a {
                         <p style="font-size: 1.25rem; font-family: var(--font-body); font-weight: 500; color: var(--tertiary); max-width: 600px; line-height: 1.6;">
                             Join us in developing leadership, exploring business careers, and competing at the state and national level.
                         </p>
-                        <a href="https://drive.google.com/file/d/1W1JtPWqQgOM7jnKZM0UNWhaoCJR2VasF/view" target="_blank" rel="noopener noreferrer" class="retro-btn" style="display: inline-block; margin-top: 28px; text-decoration: none; padding: 12px 24px; font-size: 1rem; background-color: var(--primary); color: white; border: 2px solid var(--primary); border-radius: 8px; font-weight: bold;">Chapter Resource ↗</a>
                     </div>
                 </div>
+            </section>
+
+            <!-- Featured Chapter Document -->
+            <section class="featured-document" aria-labelledby="code-of-conduct-title">
+                <div>
+                    <div class="featured-document-label">Featured Chapter Document</div>
+                    <h2 id="code-of-conduct-title">Lebanon Trail HS BPA Code of Conduct</h2>
+                    <p>Review the official chapter expectations and standards.</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1W1JtPWqQgOM7jnKZM0UNWhaoCJR2VasF/view" target="_blank" rel="noopener noreferrer" class="retro-btn">View Document ↗</a>
             </section>
 
             <!-- Bottom Section: The 3 Bento Cards -->
